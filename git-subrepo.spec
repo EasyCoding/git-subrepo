@@ -37,5 +37,5 @@ changes can be pushed back. Simple.
 %{_mandir}/man1/*
 
 %changelog
-* Tue Apr 17 2018 Vitaly Zaitsev <vitaly@easycoding.org> - 0.3.1-1
+* Tue Apr 17 2018 Vitaly Zaitsev <vitaly@easycoding.org> - 0.3.1-1.20170206gita7ee886
 - Initial release.
