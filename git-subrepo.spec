@@ -10,6 +10,7 @@ License: MIT
 Summary: Git Submodule Alternative
 URL: https://github.com/ingydotnet/%{name}
 Source0: %{url}/archive/%{commit0}.tar.gz#/%{name}-%{shortcommit0}.tar.gz
+Patch0: git-subrepo-fix-shebangs.patch
 BuildArch: noarch
 
 Requires: git-core
@@ -21,7 +22,7 @@ of your repo. Later on, upstream changes can be pulled in, and local
 changes can be pushed back. Simple.
 
 %prep
-%autosetup -n %{name}-%{commit0}
+%autosetup -n %{name}-%{commit0} -p1
 
 %build
 # Nothing to build...
