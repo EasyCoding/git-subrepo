@@ -9,9 +9,10 @@ Release: 1.%{date}git%{shortcommit0}%{?dist}
 License: MIT
 Summary: Git Submodule Alternative
 URL: https://github.com/ingydotnet/%{name}
-Source0: %{url}/archive/%{commit0}.tar.gz#/%{name}-%{shortcommit0}.tar.gz
-Patch0: git-subrepo-fix-shebangs.patch
 BuildArch: noarch
+
+Source0: %{url}/archive/%{commit0}.tar.gz#/%{name}-%{shortcommit0}.tar.gz
+Patch0: %{name}-fix-shebangs.patch
 
 Requires: git-core
 BuildRequires: git
