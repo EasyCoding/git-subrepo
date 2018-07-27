@@ -4,7 +4,7 @@
 
 Name: git-subrepo
 Version: 0.3.1
-Release: 1.%{date}git%{shortcommit0}%{?dist}
+Release: 2.%{date}git%{shortcommit0}%{?dist}
 
 License: MIT
 Summary: Git Submodule Alternative
@@ -39,5 +39,8 @@ changes can be pushed back. Simple.
 %{_mandir}/man1/*
 
 %changelog
+* Fri Jul 13 2018 Fedora Release Engineering <releng@fedoraproject.org> - 0.3.1-2.20170206gita7ee886
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_29_Mass_Rebuild
+
 * Tue Apr 17 2018 Vitaly Zaitsev <vitaly@easycoding.org> - 0.3.1-1.20170206gita7ee886
 - Initial release.
