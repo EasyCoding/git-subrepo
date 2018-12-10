@@ -7,7 +7,7 @@ Summary: Git Submodule Alternative
 URL: https://github.com/ingydotnet/%{name}
 BuildArch: noarch
 
-Source0: %{url}/archive/%{commit0}.tar.gz#/%{name}-%{shortcommit0}.tar.gz
+Source0: %{url}/archive/%{version}.tar.gz#/%{name}-%{version}.tar.gz
 Patch0: %{name}-fix-shebangs.patch
 
 Requires: git-core
@@ -19,7 +19,7 @@ of your repo. Later on, upstream changes can be pulled in, and local
 changes can be pushed back. Simple.
 
 %prep
-%autosetup -n %{name}-%{commit0} -p1
+%autosetup -p1
 
 %build
 # Nothing to build...
