@@ -1,10 +1,6 @@
-%global commit0 a7ee886e0260e847dea6240eaa6278fb2f23be8a
-%global shortcommit0 %(c=%{commit0}; echo ${c:0:7})
-%global date 20170206
-
 Name: git-subrepo
-Version: 0.3.1
-Release: 2.%{date}git%{shortcommit0}%{?dist}
+Version: 0.4.0
+Release: 1%{?dist}
 
 License: MIT
 Summary: Git Submodule Alternative
@@ -39,6 +35,9 @@ changes can be pushed back. Simple.
 %{_mandir}/man1/*
 
 %changelog
+* Mon Dec 10 2018 Vitaly Zaitsev <vitaly@easycoding.org> - 0.4.0-1
+- Updated to version 0.4.0.
+
 * Fri Jul 13 2018 Fedora Release Engineering <releng@fedoraproject.org> - 0.3.1-2.20170206gita7ee886
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_29_Mass_Rebuild
 
