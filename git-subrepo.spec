@@ -1,6 +1,6 @@
 Name: git-subrepo
 Version: 0.4.0
-Release: 1%{?dist}
+Release: 2%{?dist}
 
 License: MIT
 Summary: Git Submodule Alternative
@@ -35,6 +35,9 @@ changes can be pushed back. Simple.
 %{_mandir}/man1/*
 
 %changelog
+* Thu Jan 31 2019 Fedora Release Engineering <releng@fedoraproject.org> - 0.4.0-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_30_Mass_Rebuild
+
 * Mon Dec 10 2018 Vitaly Zaitsev <vitaly@easycoding.org> - 0.4.0-1
 - Updated to version 0.4.0.
 
