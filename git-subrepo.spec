@@ -1,17 +1,15 @@
 Name: git-subrepo
-Version: 0.4.0
-Release: 5%{?dist}
+Version: 0.4.1
+Release: 1%{?dist}
 
 License: MIT
 Summary: Git Submodule Alternative
 URL: https://github.com/ingydotnet/%{name}
+Source0: %{url}/archive/%{version}/%{name}-%{version}.tar.gz
 BuildArch: noarch
 
-Source0: %{url}/archive/%{version}.tar.gz#/%{name}-%{version}.tar.gz
-Patch0: %{name}-fix-shebangs.patch
-
 Requires: git-core
-BuildRequires: git
+BuildRequires: git-core
 
 %description
 This git command "clones" an external git repo into a subdirectory
@@ -20,6 +18,8 @@ changes can be pushed back. Simple.
 
 %prep
 %autosetup -p1
+sed -e 's@/usr/bin/env bash@/usr/bin/bash@g' -i {ext/bashplus/bin/bash+,lib/git-subrepo,lib/git-subrepo.d/help-functions.bash}
+sed -e '1 i #!/usr/bin/bash' -i ext/bashplus/lib/bash+.bash
 
 %build
 # Nothing to build...
@@ -35,6 +35,9 @@ changes can be pushed back. Simple.
 %{_mandir}/man1/*
 
 %changelog
+* Wed Nov 11 2020 Vitaly Zaitsev <vitaly@easycoding.org> - 0.4.1-1
+- Updated to version 0.4.1.
+
 * Mon Jul 27 2020 Fedora Release Engineering <releng@fedoraproject.org> - 0.4.0-5
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_33_Mass_Rebuild
 
