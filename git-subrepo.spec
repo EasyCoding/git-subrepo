@@ -1,5 +1,5 @@
 Name: git-subrepo
-Version: 0.4.1
+Version: 0.4.2
 Release: 1%{?dist}
 
 License: MIT
@@ -35,6 +35,9 @@ sed -e '1 i #!/usr/bin/bash' -i ext/bashplus/lib/bash+.bash
 %{_mandir}/man1/*
 
 %changelog
+* Sat Nov 21 2020 Vitaly Zaitsev <vitaly@easycoding.org> - 0.4.2-1
+- Updated to version 0.4.2.
+
 * Wed Nov 11 2020 Vitaly Zaitsev <vitaly@easycoding.org> - 0.4.1-1
 - Updated to version 0.4.1.
 
