@@ -10,6 +10,7 @@ BuildArch: noarch
 
 Requires: git-core
 BuildRequires: git-core
+BuildRequires: make
 
 %description
 This git command "clones" an external git repo into a subdirectory
